@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASIF RAZA | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        Asif<span class="logo-gradient">Raza</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-cta">Hire Me</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge fade-in">
+            <i class="fas fa-code"></i>
+            Senior Full Stack Developer
+          </div>
+          <h1 class="hero-title fade-in">Building <span>Digital Experiences</span> That Drive Results</h1>
+          <p class="hero-subtitle fade-in">I architect and develop high-performance web applications with
+            cutting-edge technologies, delivering exceptional user experiences that convert visitors into
+            customers.</p>
+          <div class="hero-buttons fade-in">
+            <a href="My Cv.pdf" download="Asifcv" target="_blank" class="btn btn-primary shimmer" >
+              <i class="fas fa-rocket"></i>
+              View CV
+            </a>
+
+            <!-- <script>
+              function downloadFile(event, url) {
+                event.preventDefault();
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Asif_Raza_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }
+            </script> -->
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Contact Me
+            </a>
+          </div>
+          <div class="hero-stats fade-in">
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-cube">
+            <div class="cube-face front"><img src="./images/dev1.png" alt=""
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+            <div class="cube-face back"><img src="./images/dev2.jpg" alt=""
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+            <div class="cube-face right"><img src="./images/dev3.jpg" alt=""
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+            <div class="cube-face left"><img src="./images/dev4.png" alt=""
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"><img src="./images/dev5.jpg" alt=""
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h1 class="section-title">Skills</h1>
+      <p class="section-subtitle">Blending technical precision with creative design to build high-performance
+        digital experiences.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-solid fa-code skill-icon"></i>
+          <h3 class="skill-title">Programming Languages</h3>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Python (Django, Flask, Fast API)</span><span>70%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.1s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Java</span><span>70%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>C#</span><span>60%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 60%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>React.js /Angular </span><span>50%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Php/Laravel</span><span>90%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 90%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Tailwind CSS</span><span>80%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>BootStrap</span><span>80%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Html/Css/JavaScript</span><span>100%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 100%; animation-delay: 0.2s;"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-solid fa-server skill-icon"></i>
+          <h3 class="skill-title">Python ML / Data Science</h3>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>NumPy / Pandas</span><span>80%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.3s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Matplotlib</span><span>70%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Seaborn</span><span>70%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>scikit-learn</span><span>70%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>TensorFlow/</span><span>50%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.4s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>OpenCV</span><span>50%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.4s;"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-solid fa-database skill-icon"></i>
+          <h3 class="skill-title">Databases / Tools & Platforms</h3>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>MS SQL Server</span><span>95%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 95%; animation-delay: 0.5s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>MySQL</span><span>88%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 88%; animation-delay: 0.6s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>SQLite</span><span>90%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 90%; animation-delay: 0.6s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>MongoDB / Firebase</span><span>75%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Visual Studio Code</span><span>75%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Visual Studio (2019 2022)</span><span>75%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>WAMP/XAMP/LARAGON</span><span>75%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured <span class="section-highlight">Projects</span></h2>
+        <p class="section-subtitle fade-in">Enterprise-grade solutions built with modern architectures</p>
+        <div class="section-divider fade-in"></div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <div class="project-badge">Enterprise</div>
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">A scalable e-commerce solution handling 10k+ daily
+                transactions with real-time inventory, advanced analytics, and AI-powered
+                recommendations.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Next.js 14</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card fade-in">
+            <div class="project-image project-image-2">
+              <div class="project-badge">SaaS</div>
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-description">Real-time business intelligence dashboard with data
+                visualization, custom reporting, and team collaboration features for enterprise clients.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">D3.js</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card fade-in">
+            <div class="project-image project-image-3">
+              <div class="project-badge">Mobile-First</div>
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Travel Planning App</h3>
+              <p class="project-description">Progressive web application for travel planning with
+                itinerary management, real-time flight tracking, and social sharing capabilities.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Vue.js</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">PWA</span>
+                <span class="tech-badge">Google Maps API</span>
+                <span class="tech-badge">Cloud Functions</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="section-title fade-in">Let's Build The <span class="section-highlight">Future</span>
+            Together</h2>
+          <p class="section-subtitle fade-in">I'm currently accepting select freelance projects and full-time
+            leadership opportunities.</p>
+          <div class="section-divider fade-in"></div>
+
+          <div class="contact-info">
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3 class="contact-title">Email</h3>
+                <p class="contact-detail">AsifRaza7997@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3 class="contact-title">Location</h3>
+                <p class="contact-detail">Sadder Karachi, Pakistan</p>
+                <p class="contact-detail">Available for OnSite/Remote Work</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3 class="contact-title">Phone</h3>
+                <p class="contact-detail">+92 310 2388463</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="emailAddr" placeholder="Email Address" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="companyProject" placeholder="Company / Project">
+              </div>
+              <div class="form-group">
+                <textarea id="projectMessage" placeholder="Tell me about your project, timeline, and budget..." rows="6"
+                  required></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" id="sendBtn" class="btn btn-primary shimmer">
+                  <i class="fas fa-paper-plane"></i>
+                  Send Message
+                </button>
+              </div>
+              <div id="formStatus" class="status-message"></div>
+            </form>
+          </div>
+          <!-- tiny note: powered by google apps script -->
+          <p style="font-size: 0.75rem; text-align: center; margin-top: 2rem; color: #94a3b8;">
+            ✨ Your message will be sent directly to AsifRaza7997@gmail.com via secure Google connection.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="logo">
+          <span class="logo-dot"></span>
+          Asif<span class="logo-gradient">Raza</span>
+        </a>
+        <p class="footer-text">Senior Full Stack Developer specializing in high-performance web applications,
+          scalable architectures, and exceptional user experiences.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-dev"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+        </div>
+        <p class="copyright">© 2026 Asif Raza. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script>
+
+    // 👇👇👇 PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE 👇👇👇
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx175be0oGkwSLEN5dT4wpOSHOEAPgcPKvcG6R4j_gtEuJ-hlfv5PdiHHCCLT65oP8bZA/exec";  // <-- CHANGE THIS
+
+    const form = document.getElementById('contactForm');
+    const sendButton = document.getElementById('sendBtn');
+    const statusDiv = document.getElementById('formStatus');
+
+    // helper: show status message
+    function showStatus(message, type) {
+      statusDiv.style.display = 'block';
+      statusDiv.innerHTML = message;
+      statusDiv.className = `status-message status-${type}`;
+      if (type !== 'loading') {
+        setTimeout(() => {
+          if (statusDiv) statusDiv.style.display = 'none';
+        }, 6000);
+      }
+    }
+
+    function hideStatus() {
+      statusDiv.style.display = 'none';
+    }
+
+    function setLoading(isLoading) {
+      sendButton.disabled = isLoading;
+      if (isLoading) {
+        sendButton.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
+      } else {
+        sendButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      }
+    }
+
+    // validation
+    function validateForm() {
+      const name = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('emailAddr').value.trim();
+      const message = document.getElementById('projectMessage').value.trim();
+
+      if (!name) {
+        showStatus("❌ Please enter your full name.", "error");
+        return false;
+      }
+      if (!email) {
+        showStatus("❌ Please enter your email address.", "error");
+        return false;
+      }
+      const emailRegex = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
+      if (!emailRegex.test(email)) {
+        showStatus("❌ Please enter a valid email address (e.g., name@domain.com).", "error");
+        return false;
+      }
+      if (!message) {
+        showStatus("❌ Please write your project details or message.", "error");
+        return false;
+      }
+      return true;
+    }
+
+    // handle form submit
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideStatus();
+
+      if (!validateForm()) return;
+
+      // check if script URL is configured
+      if (SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL") {
+        showStatus("⚠️ Email service not yet linked. Please follow setup instructions in the HTML source (replace SCRIPT_URL with your Google Apps Script URL).", "error");
+        return;
+      }
+
+      // gather data
+      const name = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('emailAddr').value.trim();
+      const company = document.getElementById('companyProject').value.trim();
+      const message = document.getElementById('projectMessage').value.trim();
+
+      setLoading(true);
+      showStatus("📡 Connecting to Google & sending message...", "loading");
+
+      try {
+        // create URL encoded data
+        const formData = new URLSearchParams();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('company', company);
+        formData.append('message', message);
+
+        const response = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        });
+
+        // if response is ok, parse JSON
+        if (response.ok) {
+          const result = await response.json();
+          if (result.result === 'success') {
+            form.reset();
+            showStatus("✨ Message sent successfully! I'll reply to " + email + " within 24 hours. Thank you! ✨", "success");
+          } else {
+            throw new Error(result.error || "Unknown error from server");
+          }
+        } else {
+          // if status not ok, but maybe still email sent? we show generic error but also try fallback
+          throw new Error(`Server responded with ${response.status}`);
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+        // In case of CORS or network glitch, but the email might have been sent anyway? We'll show a more helpful message.
+        // If the script URL is correct but cors fails (unlikely with modern Apps Script), user can check.
+        showStatus("⚠️ Delivery issue: " + (err.message || "Please verify Google Apps Script deployment and URL. Make sure you deployed as 'Web app' with access 'Anyone'."), "error");
+      } finally {
+        setLoading(false);
+      }
+    });
+
+    // Optional: pre-check on page load if script URL is placeholder
+    window.addEventListener('DOMContentLoaded', () => {
+      if (SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL") {
+        console.warn("⚠️ Google Apps Script URL not configured. Please replace SCRIPT_URL variable with your own web app URL.");
+        // show gentle reminder but not intrusive
+        const reminderDiv = document.createElement('div');
+        reminderDiv.style.background = "#fffbeb";
+        reminderDiv.style.borderLeft = "4px solid #f59e0b";
+        reminderDiv.style.padding = "0.75rem";
+        reminderDiv.style.borderRadius = "1rem";
+        reminderDiv.style.marginTop = "1rem";
+        reminderDiv.style.fontSize = "0.85rem";
+        reminderDiv.innerHTML = "🔧 <strong>Setup needed:</strong> To receive emails, replace <code>SCRIPT_URL</code> with your Google Apps Script web app URL. See instructions inside HTML.";
+        document.querySelector('.contact-form').appendChild(reminderDiv);
+      }
+    });
+  </script>
+
+</body>
+
+</html>

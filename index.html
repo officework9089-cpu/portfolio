@@ -4,13 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASIF RAZA | Full Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <title>Asif Raza | Full Stack Developer in Karachi Pakistan</title>
+
+  <meta name="description"
+    content="Asif Raza is a Full Stack Developer from Karachi, Pakistan specializing in Laravel, React, Django, PHP, JavaScript, Python, and modern web application development.">
+
+  <meta name="keywords"
+    content="Asif Raza, Full Stack Developer, Laravel Developer, React Developer, Django Developer, PHP Developer, Web Developer Pakistan, Karachi Developer, Python Developer, Frontend Developer, Backend Developer">
+
+  <meta name="author" content="Asif Raza">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Asif Raza | Full Stack Developer">
+  <meta property="og:description"
+    content="Portfolio of Asif Raza — Full Stack Developer specializing in Laravel, React, Django, and scalable web applications.">
+  <meta property="og:image" content="images/dev7.jpg">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:site_name" content="Asif Raza Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asif Raza | Full Stack Developer">
+  <meta name="twitter:description"
+    content="Explore projects, skills, and services by Asif Raza — Full Stack Developer from Karachi, Pakistan.">
+  <meta name="twitter:image" content="images/dev7.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Structured Data SEO -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Asif Raza",
+  "jobTitle": "Full Stack Developer",
+  "url": "https://yourdomain.com/",
+  "image": "https://yourdomain.com/images/dev7.jpg",
+  "email": "mailto:AsifRaza7997@gmail.com",
+  "telephone": "+92 310 2388463",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karachi",
+    "addressCountry": "Pakistan"
+  },
+  "sameAs": [
+    "https://github.com/yourgithub",
+    "https://linkedin.com/in/yourlinkedin"
+  ],
+  "knowsAbout": [
+    "Laravel",
+    "PHP",
+    "React.js",
+    "Django",
+    "Python",
+    "JavaScript",
+    "MySQL",
+    "Tailwind CSS"
+  ]
+}
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -46,6 +114,43 @@
           <a href="#contact" class="nav-cta">Hire Me</a>
         </li>
       </ul>
+      <script>// Theme Toggle Functionality
+        function initTheme() {
+          const savedTheme = localStorage.getItem('theme') || 'dark';
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          updateThemeIcon(savedTheme);
+        }
+
+        function toggleTheme() {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+          updateThemeIcon(newTheme);
+        }
+
+        function updateThemeIcon(theme) {
+          const toggleBtn = document.getElementById('themeToggle');
+          if (toggleBtn) {
+            toggleBtn.innerHTML = theme === 'dark'
+              ? '<i class="fas fa-sun sun-icon"></i><i class="fas fa-moon moon-icon" style="display:none"></i>'
+              : '<i class="fas fa-sun sun-icon" style="display:none"></i><i class="fas fa-moon moon-icon"></i>';
+          }
+        }
+
+        // Add theme toggle button to your HTML
+        const themeButtonHTML = `
+<button id="themeToggle" class="theme-toggle">
+    <i class="fas fa-sun sun-icon"></i>
+    <i class="fas fa-moon moon-icon"></i>
+</button>
+`;
+        document.body.insertAdjacentHTML('beforeend', themeButtonHTML);
+
+        // Initialize theme
+        initTheme();
+        document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
+      </script>
 
       <div class="hamburger">
         <span class="bar"></span>
@@ -63,29 +168,17 @@
         <div class="hero-content">
           <div class="hero-badge fade-in">
             <i class="fas fa-code"></i>
-             Full Stack Developer
+            Full Stack Developer
           </div>
           <h1 class="hero-title fade-in">Building <span>Digital Experiences</span> That Drive Results</h1>
           <p class="hero-subtitle fade-in">I architect and develop high-performance web applications with
             cutting-edge technologies, delivering exceptional user experiences that convert visitors into
             customers.</p>
           <div class="hero-buttons fade-in">
-            <a href="Asif Resume.pdf" download="Asifcv" target="_blank" class="btn btn-primary shimmer" >
+            <a href="My Cv.pdf" download="Asifcv" target="_blank" class="btn btn-primary shimmer">
               <i class="fas fa-rocket"></i>
               View CV
             </a>
-
-            <!-- <script>
-              function downloadFile(event, url) {
-                event.preventDefault();
-                const link = document.createElement('a');
-                link.href = url;
-                link.download = 'Asif_Raza_Resume.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }
-            </script> -->
             <a href="#contact" class="btn btn-secondary">
               <i class="fas fa-envelope"></i>
               Contact Me
@@ -108,7 +201,7 @@
         </div>
         <div class="hero-visual">
           <div class="floating-cube">
-            <div class="cube-face front"><img src="./images/dev1.png" alt=""
+            <div class="cube-face front"><img src="./images/dev7.jpg" alt=""
                 style="width: 100%; height: 100%; object-fit: cover;"></div>
             <div class="cube-face back"><img src="./images/dev2.jpg" alt=""
                 style="width: 100%; height: 100%; object-fit: cover;"></div>
@@ -116,7 +209,7 @@
                 style="width: 100%; height: 100%; object-fit: cover;"></div>
             <div class="cube-face left"><img src="./images/dev4.png" alt=""
                 style="width: 100%; height: 100%; object-fit: cover;"></div>
-            <div class="cube-face top"></div>
+            <!-- <div class="cube-face top"></div> -->
             <div class="cube-face bottom"><img src="./images/dev5.jpg" alt=""
                 style="width: 100%; height: 100%; object-fit: cover;"></div>
           </div>
@@ -125,167 +218,246 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
-      <h1 class="section-title">Skills</h1>
-      <p class="section-subtitle">Blending technical precision with creative design to build high-performance
-        digital experiences.</p>
+    <section class="skills" id="skills">
+  <h1 class="section-title">Skills</h1>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fa-solid fa-code skill-icon"></i>
-          <h3 class="skill-title">Programming Languages</h3>
+  <p class="section-subtitle">
+    Blending technical precision with creative design to build
+    high-performance digital experiences.
+  </p>
 
-          <div class="skill-item">
-            <div class="skill-info"><span>Python (Django, Flask, Fast API)</span><span>70%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.1s;"></div>
-            </div>
-          </div>
+  <div class="skills-grid">
 
-          <div class="skill-item">
-            <div class="skill-info"><span>Java</span><span>70%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>C#</span><span>60%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 60%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>React.js /Angular </span><span>50%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Php/Laravel</span><span>90%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 90%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Tailwind CSS</span><span>80%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>BootStrap</span><span>80%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Html/Css/JavaScript</span><span>100%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 100%; animation-delay: 0.2s;"></div>
-            </div>
-          </div>
+    <!-- Programming Languages -->
+    <div class="skill-card">
+      <i class="fa-solid fa-code skill-icon"></i>
+      <h3 class="skill-title">Programming Languages</h3>
 
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Python (Django, Flask, FastAPI)</span>
+          <span class="skill-level expert">Advanced</span>
         </div>
-
-        <div class="skill-card">
-          <i class="fa-solid fa-server skill-icon"></i>
-          <h3 class="skill-title">Python ML / Data Science</h3>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>NumPy / Pandas</span><span>80%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.3s;"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>Matplotlib</span><span>70%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>Seaborn</span><span>70%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>scikit-learn</span><span>70%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>TensorFlow/</span><span>50%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.4s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>OpenCV</span><span>50%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.4s;"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="skill-card">
-          <i class="fa-solid fa-database skill-icon"></i>
-          <h3 class="skill-title">Databases / Tools & Platforms</h3>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>MS SQL Server</span><span>95%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 95%; animation-delay: 0.5s;"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>MySQL</span><span>88%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 88%; animation-delay: 0.6s;"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>SQLite</span><span>90%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 90%; animation-delay: 0.6s;"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>MongoDB / Firebase</span><span>75%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>Visual Studio Code</span><span>75%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info"><span>Visual Studio (2019 2022)</span><span>75%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-info"><span>WAMP/XAMP/LARAGON</span><span>75%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
-            </div>
-          </div>
-
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.1s;"></div>
         </div>
       </div>
-    </section>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Java</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>C#</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 60%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>React.js / Angular</span>
+          <span class="skill-level beginner">Beginner</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>PHP / Laravel</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Tailwind CSS</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Bootstrap</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>HTML / CSS / JavaScript</span>
+          <span class="skill-level expert">Expert</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 100%; animation-delay: 0.2s;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ML / Data Science -->
+    <div class="skill-card">
+      <i class="fa-solid fa-server skill-icon"></i>
+      <h3 class="skill-title">Python ML / Data Science</h3>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>NumPy / Pandas</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 80%; animation-delay: 0.3s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Matplotlib</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Seaborn</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>scikit-learn</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 70%; animation-delay: 0.4s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>TensorFlow</span>
+          <span class="skill-level beginner">Beginner</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.4s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>OpenCV</span>
+          <span class="skill-level beginner">Beginner</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 50%; animation-delay: 0.4s;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-card">
+      <i class="fa-solid fa-database skill-icon"></i>
+      <h3 class="skill-title">Databases / Tools & Platforms</h3>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>MS SQL Server</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 85%; animation-delay: 0.5s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>MySQL</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 88%; animation-delay: 0.6s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>SQLite</span>
+          <span class="skill-level advanced">Advanced</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 90%; animation-delay: 0.6s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>MongoDB / Firebase</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Visual Studio Code</span>
+          <span class="skill-level expert">Expert</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 95%; animation-delay: 0.6s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Visual Studio (2019 / 2022)</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>WAMP / XAMPP / Laragon</span>
+          <span class="skill-level intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="--target: 75%; animation-delay: 0.6s;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
@@ -298,27 +470,30 @@
           <!-- Project 1 -->
           <article class="project-card fade-in">
             <div class="project-image">
-              <div class="project-badge">Enterprise</div>
-              <i class="fas fa-shopping-cart"></i>
+              <div class="project-badge">
+                <h4>Publishing</h4>
+              </div>
+              <img src="./images/airmount.png" alt="Airmont Publisher Website"
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="project-content">
-              <h3 class="project-title">E-Commerce Platform</h3>
-              <p class="project-description">A scalable e-commerce solution handling 10k+ daily
-                transactions with real-time inventory, advanced analytics, and AI-powered
-                recommendations.</p>
+              <h3 class="project-title">Airmont Publisher Website</h3>
+              <p class="project-description">A modern publishing platform developed for Airmont Publisher featuring
+                book management, author profiles, category browsing, responsive layouts,
+                and an optimized user experience for readers and publishers.</p>
               <div class="project-tech">
-                <span class="tech-badge">Next.js 14</span>
-                <span class="tech-badge">Node.js</span>
-                <span class="tech-badge">PostgreSQL</span>
-                <span class="tech-badge">Redis</span>
-                <span class="tech-badge">Stripe</span>
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">JavaScript</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a href="" class="project-link">
                   <i class="fab fa-github"></i>
                   View Code
                 </a>
-                <a href="#" class="project-link">
+                <a href="https://airmontpublishing.com/" class="project-link">
                   <i class="fas fa-external-link-alt"></i>
                   Live Demo
                 </a>
@@ -329,23 +504,29 @@
           <!-- Project 2 -->
           <article class="project-card fade-in">
             <div class="project-image project-image-2">
-              <div class="project-badge">SaaS</div>
-              <i class="fas fa-chart-bar"></i>
+              <div class="project-badge">
+                <h4>Automotive</h4>
+              </div>
+              <img src="./images/autoboli.png" alt="Autoboli Vehicle Marketplace" srcset=""
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="project-content">
-              <h3 class="project-title">Analytics Dashboard</h3>
-              <p class="project-description">Real-time business intelligence dashboard with data
-                visualization, custom reporting, and team collaboration features for enterprise clients.
+              <h3 class="project-title">Autoboli Vehicle Marketplace</h3>
+              <p class="project-description"> A modern automotive marketplace platform for buying and selling vehicles
+                with advanced search filters, vehicle listings, dealer profiles, booking
+                features, and responsive user experience across all devices.
+
               </p>
               <div class="project-tech">
-                <span class="tech-badge">React</span>
-                <span class="tech-badge">TypeScript</span>
-                <span class="tech-badge">D3.js</span>
-                <span class="tech-badge">FastAPI</span>
-                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">jQuery</span>
               </div>
               <div class="project-links">
-                <a href="#" class="project-link">
+                <a href="https://github.com/daprimeg/boli" class="project-link">
                   <i class="fab fa-github"></i>
                   View Code
                 </a>
@@ -360,19 +541,25 @@
           <!-- Project 3 -->
           <article class="project-card fade-in">
             <div class="project-image project-image-3">
-              <div class="project-badge">Mobile-First</div>
-              <i class="fas fa-mobile-alt"></i>
+              <div class="project-badge">
+                <h4>Marketing</h4>
+              </div>
+              <img src="./images/logo.jpeg" alt="Travel Planning App"
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="project-content">
-              <h3 class="project-title">Travel Planning App</h3>
-              <p class="project-description">Progressive web application for travel planning with
-                itinerary management, real-time flight tracking, and social sharing capabilities.</p>
+              <h3 class="project-title">Business Mind Marketing Website </h3>
+              <p class="project-description">
+                A professional digital marketing website designed for Business Mind
+                Marketing featuring service showcases, lead generation forms, SEO-focused
+                pages, responsive layouts, and modern branding for business growth.
+              </p>
               <div class="project-tech">
-                <span class="tech-badge">Vue.js</span>
-                <span class="tech-badge">Firebase</span>
-                <span class="tech-badge">PWA</span>
-                <span class="tech-badge">Google Maps API</span>
-                <span class="tech-badge">Cloud Functions</span>
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">SQLite</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">JavaScript</span>
               </div>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -397,13 +584,13 @@
           <h2 class="section-title fade-in">Let's Build The <span class="section-highlight">Future</span>
             Together</h2>
           <p class="section-subtitle fade-in">I'm currently accepting select freelance projects and full-time
-            leadership opportunities.</p>
+            opportunities.</p>
           <div class="section-divider fade-in"></div>
 
           <div class="contact-info">
             <div class="contact-item fade-in">
               <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
+                <i class="fa-solid fa-envelope"></i>
               </div>
               <div>
                 <h3 class="contact-title">Email</h3>
@@ -413,18 +600,18 @@
 
             <div class="contact-item fade-in">
               <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fa-solid fa-map-marker-alt"></i>
               </div>
               <div>
                 <h3 class="contact-title">Location</h3>
-                <p class="contact-detail">Sadder Karachi, Pakistan</p>
-                <p class="contact-detail">Available for OnSite/Remote Work</p>
+                <p class="contact-detail">Sadder, Karachi, Pakistan</p>
+                <p class="contact-detail">Available for OnSite Remote Work</p>
               </div>
             </div>
 
             <div class="contact-item fade-in">
               <div class="contact-icon">
-                <i class="fas fa-phone"></i>
+                <i class="fa-solid fa-phone"></i>
               </div>
               <div>
                 <h3 class="contact-title">Phone</h3>
@@ -436,15 +623,29 @@
           <div class="contact-form">
             <form id="contactForm">
               <div class="form-group">
+                <label for="fullName">Full Name</label>
                 <input type="text" id="fullName" placeholder="Full Name" required>
               </div>
               <div class="form-group">
+                <label for="emailAddr">Email Address</label>
                 <input type="email" id="emailAddr" placeholder="Email Address" required>
               </div>
-              <div class="form-group">
-                <input type="text" id="companyProject" placeholder="Company / Project">
+              <div class="mb-4">
+                <label for="companyProject" class="block mb-2">
+                  Company / Project
+                </label>
+
+                <input list="companyProjectList" name="companyProject" id="companyProject"
+                  placeholder="Company or Project" required
+                  class="w-full px-4 py-3 text-gray-800 bg-white border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out dark:bg-gray-800 dark:text-white dark:border-gray-700" />
+
+                <datalist id="companyProjectList">
+                  <option value="Company Name"></option>
+                  <option value="Personal"></option>
+                </datalist>
               </div>
               <div class="form-group">
+                <label for="projectMessage">Project Details</label>
                 <textarea id="projectMessage" placeholder="Tell me about your project, timeline, and budget..." rows="6"
                   required></textarea>
               </div>
